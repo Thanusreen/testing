@@ -1,0 +1,22 @@
+Feature: Quick Post
+
+In order to share my car
+
+As a car owner
+
+I want to publish it on intranet with details like source, destination, time, email, phone no
+
+Scenario: Employee enter valid ride details to share
+
+Given Employee “Naveen” wanted to submit source, destination and time as “Mumbai”, “Pune” and “5.30pm” 
+
+And “Naveen” email is “naveenhome@gmail.com” and phone no is “+91 98105987500”
+
+When “Naveen” click on “Share”
+
+Then Ride get added and “Naveen” get a message “Ride is shared.” with “OK” button
+
+And “Naveen” get redirected to home page on clicking on “OK” button
+
+And “Naveen” can see his ride on top on “Home” page
+
